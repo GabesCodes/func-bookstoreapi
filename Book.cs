@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Google.Protobuf.WellKnownTypes;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,5 +20,8 @@ namespace func_bookstoreapi
         public string genre { get; set; }
         [JsonProperty("price")]
         public double price { get; set; }
+        
+        [JsonProperty("time")]
+        public DateTime timestamp {get; set;}
     }
 }
